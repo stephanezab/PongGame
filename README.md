@@ -1,3 +1,1 @@
 # PongGame
-ijij
-ijjiji
