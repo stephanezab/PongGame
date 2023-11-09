@@ -46,22 +46,22 @@ public class Paddle extends Rectangle {
 		case 1:
 			if(e.getKeyCode() == KeyEvent.VK_W) {
 				setYDirection(0);
-				move();
+				//move();
 			}
 			if(e.getKeyCode() == KeyEvent.VK_S) {
 				setYDirection(0);
-				move();
+				//move();
 					
 			}
 			break;
 		case 2:
 			if(e.getKeyCode() == KeyEvent.VK_UP) {
 				setYDirection(0);
-				move();
+				//move();
 			}
 			if(e.getKeyCode() == KeyEvent.VK_DOWN){
 				setYDirection(0);
-				move();
+				//move();
 					
 			}
 			break;

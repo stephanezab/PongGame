@@ -57,6 +57,7 @@ public class Panel extends JPanel implements Runnable{
 		paddle1.draw(g);
 		paddle2.draw(g);
 		ball.draw(g);
+		score.draw(g);
 
 	}
 	public void move() {
@@ -67,6 +68,39 @@ public class Panel extends JPanel implements Runnable{
 	}
 	
 	public void checkCollision() {
+		// for the ball to bounce at window up and down
+		if (ball.y <= 0)
+			ball.setYDirection(-ball.yVelocity);
+		if(ball.y >= GAME_HEIGHT - BALL_DIAMETER)
+			ball.setYDirection(-ball.yVelocity);
+		
+		// for the ball to bounce on paddles
+		if(ball.intersects(paddle1)) {
+			ball.xVelocity = - ball.xVelocity;
+			ball.xVelocity++;
+			if(ball.yVelocity++ > 0)
+				ball.yVelocity++;
+			else
+				ball.yVelocity--;
+					
+			ball.setXDirection(ball.xVelocity);
+			ball.setYDirection(ball.yVelocity);
+		}
+		if(ball.intersects(paddle2)) {
+			ball.xVelocity = - ball.xVelocity;
+			ball.xVelocity--;
+			
+			if(ball.yVelocity++ > 0)
+				ball.yVelocity++;
+			else
+				ball.yVelocity--;
+			
+			ball.setXDirection(ball.xVelocity);
+			ball.setYDirection(ball.yVelocity);
+		}
+		
+		
+		// for the paddles up and down bounds
 		if(paddle1.y <= 0)
 			paddle1.y = 0;
 		if(paddle1.y >= (GAME_HEIGHT-PADDLE_HEIGHT))
@@ -77,6 +111,21 @@ public class Panel extends JPanel implements Runnable{
 		if(paddle2.y >= (GAME_HEIGHT-PADDLE_HEIGHT))
 			paddle2.y = (GAME_HEIGHT-PADDLE_HEIGHT);
 		
+		
+		// give a 1 point to player
+		if(ball.x <= 0) {
+			score.player2++;
+			newBall();
+			newPaddles();
+			
+		}
+		
+		if (ball.x >= GAME_WIDTH) {
+			score.player1++;
+			newBall();
+			newPaddles();
+			
+		}
 		
 	}
 	public class AL extends KeyAdapter{
