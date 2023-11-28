@@ -1,6 +1,6 @@
-## PongGame
+# PongGame
 
-# Structure 
+## Structure 
 The project has 6 classes.
 * GameMain
   - This is the main class of the project
