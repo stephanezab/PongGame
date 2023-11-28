@@ -19,6 +19,6 @@ The project has 6 classes.
 
  ## Import
 These are the imports needed for the project.
-![carbon](https://github.com/stephanezab/PongGame/assets/75401897/f65e3a3a-9797-4b72-b9cd-55764ae486b0)
+![carbon (1)](https://github.com/stephanezab/PongGame/assets/75401897/0aade0e2-b4bb-497e-a182-af4353ae0dae)
 
 
