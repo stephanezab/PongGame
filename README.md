@@ -19,6 +19,10 @@ The project has 6 classes.
 
  ## Import
 These are the imports needed for the project.
-![carbon (1)](https://github.com/stephanezab/PongGame/assets/75401897/0aade0e2-b4bb-497e-a182-af4353ae0dae)
+```
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+import javax.swing.*;
 
 
