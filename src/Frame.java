@@ -3,11 +3,14 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
-public class Frame extends JFrame {
+public class Frame extends JFrame   {
 
 	Panel panel;
+	JButton start;
+	
 	
 	Frame(){
+		
 		panel = new Panel();
 		this.add(panel);
 		this.setTitle("Pong Game");
@@ -18,5 +21,8 @@ public class Frame extends JFrame {
 		this.setVisible(true);
 		this.setLocationRelativeTo(null); // to appear at center
 	}
+	
+
+
 	
 }

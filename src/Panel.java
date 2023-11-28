@@ -20,6 +20,7 @@ public class Panel extends JPanel implements Runnable{
 	Paddle paddle2;
 	Ball ball;
 	Score score;
+
 	
 	Panel(){ 
 		 newBall();
@@ -28,6 +29,8 @@ public class Panel extends JPanel implements Runnable{
 		 this.setFocusable(true); // Detect key stroke
 		 this.addKeyListener(new AL()); // actionlistener for keys
 		 this.setPreferredSize(SCREEN_SIZE);
+		 
+
 	
 		 gameThread = new Thread(this);
 		 gameThread.start();
@@ -54,10 +57,23 @@ public class Panel extends JPanel implements Runnable{
 		
 	}
 	public void draw(Graphics g) {
-		paddle1.draw(g);
-		paddle2.draw(g);
-		ball.draw(g);
-		score.draw(g);
+		if(score.player1 == 3 || score.player2 == 3) {
+			Gameover(g); // GAME OVER
+		}
+		else if(score.player1 == 4 || score.player2 == 4) {
+			// A way to restart the game
+			newBall();    
+			newPaddles();
+			score = new Score(GAME_WIDTH, GAME_HEIGHT );
+		}
+		else {
+			paddle1.draw(g);
+			paddle2.draw(g);
+			ball.draw(g);
+			score.draw(g);
+		}
+			
+		
 
 	}
 	public void move() {
@@ -65,6 +81,31 @@ public class Panel extends JPanel implements Runnable{
 		paddle2.move();
 		ball.move();
 		
+	}
+	
+	
+	
+	public void Gameover(Graphics g) {
+		String player = "";
+		if (score.player1 >= 3) {
+			player = "Blue";
+		}
+		if (score.player2 >= 3) {
+			player = "Red";
+			
+		}
+		
+
+		g.setColor(Color.red);
+		g.setFont( new Font("Ink Free",Font.BOLD, 40));
+		FontMetrics metrics1 = getFontMetrics(g.getFont());
+		g.drawString(player + " wins", (GAME_WIDTH - metrics1.stringWidth( player + " wins"))/2, g.getFont().getSize());
+
+		
+		g.setColor(Color.red);
+		g.setFont( new Font("Ink Free",Font.BOLD, 75));
+		FontMetrics metrics2 = getFontMetrics(g.getFont());
+		g.drawString("Game Over", (GAME_WIDTH - metrics2.stringWidth("Game Over"))/2, GAME_HEIGHT/2);
 	}
 	
 	public void checkCollision() {
@@ -156,6 +197,7 @@ public class Panel extends JPanel implements Runnable{
 			if(delta >= 1) {
 				move();
 				checkCollision();
+				//win();
 				repaint();
 				delta--;
 			}
