@@ -27,5 +27,5 @@ import javax.swing.*;
 ```
 
 ## How to use
-Clone the repositori using Git and dowwnload eclipse. You can download eclipse https://eclipseide.org/
+Clone the repository using Git and dowwnload eclipse. You can download eclipse https://eclipseide.org/
 
