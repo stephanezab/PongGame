@@ -1,5 +1,14 @@
 # PongGame
 
+ ## Import
+These are the imports needed for the project.
+```
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+import javax.swing.*;
+```
+
 ## Structure 
 The project has 6 classes.
 * GameMain class
@@ -16,15 +25,6 @@ The project has 6 classes.
   - This class create and control the ball of the game
 * Score class
   - This class keeps track of the score of the players
-
- ## Import
-These are the imports needed for the project.
-```
-import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
-import javax.swing.*;
-```
 
 ## How to use
 Clone the repository using Git and dowwnload eclipse. You can download eclipse https://eclipseide.org/
