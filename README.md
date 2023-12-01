@@ -32,5 +32,5 @@ The project has 6 classes.
   - This class keeps track of the score of the players
 
 ## How to use
-Clone the repository using Git and dowwnload eclipse. You can download eclipse https://eclipseide.org/
+Clone the repository using Git and download eclipse. You can download eclipse https://eclipseide.org/
 
