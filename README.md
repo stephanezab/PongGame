@@ -20,7 +20,7 @@ import javax.swing.*;
 
 1. Use the keys w (up) and s (down) to control the left paddle.
 2. Use arrow keys (↑, ↓) to control the right paddle.
-3. Avoid letting the ball pass by your paddle the other player gains 1 point.
+3. Avoid letting the ball pass by your paddle or the other player gains 1 point.
 4. After one player obtains 3 points the game ends.
 
 ## How to use
