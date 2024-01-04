@@ -7,6 +7,13 @@ This is a Pong game for two players. One uses up and down keys, and the other us
 
 ## Description
 
+## Features
+
+- Classic Pong gameplay.
+- Simple and intuitive user interface.
+- Two-player mode on the same computer.
+- Score tracking for each player.
+
 ## Requirements
 These are the imports needed for the project.
 ```
@@ -22,6 +29,7 @@ import javax.swing.*;
 2. Use arrow keys (↑, ↓) to control the right paddle.
 3. Avoid letting the ball pass by your paddle or the other player gains 1 point.
 4. After one player obtains 3 points the game ends.
+
 
 ## How to use
 Clone the repository using Git and download eclipse. You can download eclipse https://eclipseide.org/
