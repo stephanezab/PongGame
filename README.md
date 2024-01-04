@@ -6,6 +6,7 @@ This is a Pong game for two players. One uses up and down keys, and the other us
 ![demo](https://github.com/stephanezab/PongGame/assets/75401897/e45b36f4-e25f-4cc2-8244-6f3b5e62b87f)
 
 ## Description
+This is a simple implementation of the classic Pong game using Java. The game features two paddles and a bouncing ball, and it can be played on a single computer with two players controlling the paddles from the same keyboard.
 
 ## Features
 
@@ -30,7 +31,14 @@ import javax.swing.*;
 3. Avoid letting the ball pass by your paddle or the other player gains 1 point.
 4. After one player obtains 3 points the game ends.
 
-
 ## How to use
-Clone the repository using Git and download eclipse. You can download eclipse https://eclipseide.org/
+
+1. **Clone or Download This Repository**
+    ```bash
+    git clone https://github.com/your-username/Java-Pong-Game.git
+    ```
+2.  Download eclipse or use another code editor. You can download eclipse
+   ```
+  https://eclipseide.org/
+  ```
 
