@@ -37,7 +37,7 @@ import javax.swing.*;
     ```bash
     git clone https://github.com/stephanezab/PongGame.git
     ```
-2.  Download eclipse or use another code editor. You can download eclipse
+2. **Download eclipse or use another code editor. You can download eclipse in this link:**
    ```bash
        https://eclipseide.org/
    ```
