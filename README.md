@@ -35,7 +35,7 @@ import javax.swing.*;
 
 1. **Clone or Download This Repository**
     ```bash
-    git clone https://github.com/your-username/Java-Pong-Game.git
+    git clone https://github.com/stephanezab/PongGame.git
     ```
 2.  Download eclipse or use another code editor. You can download eclipse
    ```bash
